@@ -235,4 +235,13 @@
         padding: 0;
     }
   }
+
+.notification{
+    margin: 0 !important;
+    inset: 0px 0px auto auto !important;
+    position: absolute !important;
+    transform: translate3d(-295.5px, 71.5px, 0px) !important;
+    height: 30rem;
+    overflow-y: scroll;
+}
   

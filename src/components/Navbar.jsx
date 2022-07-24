@@ -80,7 +80,7 @@ export default function Navbar(props) {
             <NavLink to="/" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               {props.isLoggedIn ? <>{props.notifBuyer ? <MdNotificationsActive size={`1.2em`} /> : <span className="fa fa-bell"></span>}</> : <span className="fa fa-bell"></span>}
             </NavLink>
-            <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <ul className="dropdown-menu notification" aria-labelledby="dropdownMenuLink">
               {props.isLoggedIn && <Notif seller={props.notifSeller} buyer={props.notifBuyer} />}
             </ul>
           </li>

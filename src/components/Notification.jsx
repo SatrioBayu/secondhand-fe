@@ -5,10 +5,10 @@ import { NavLink } from "react-router-dom";
 export default function Notification(props) {
   return (
     <li>
+      <p className="text-center fw-bold fs-6">Notification Buyer</p>
       {props.buyer &&
         props.buyer.map((data) => (
           <div key={data.id}>
-            <p className="text-center">Notification Buyer</p>
             <NavLink className="dropdown-item" to="/dashboardbuyer">
               <div className="d-flex product">
                 <div className="product-img">
@@ -26,10 +26,10 @@ export default function Notification(props) {
             </NavLink>
           </div>
         ))}
+      <p className="text-center fw-bold fs-6">Notification Seller</p>
       {props.seller &&
         props.seller.map((data) => (
           <div key={data.id}>
-            <p className="text-center">Notification Seller</p>
             <NavLink className="dropdown-item" to="/dashboardseller">
               <div className="d-flex product">
                 <div className="product-img">
@@ -39,7 +39,7 @@ export default function Notification(props) {
                   <h5>{data.Product.nama}</h5>
                   <p>Buyer Offer:</p>
                   <p>Rp. {data.harga}</p>
-                  <h5 className="seller-agree">{data.User.nama} bid your product</h5>
+                  <h5 className="seller-agree">{data.User.nama.split(" ").sort((a, b) => a.length - b.length)[0]} bid your product</h5>
                 </div>
               </div>
               <hr />
