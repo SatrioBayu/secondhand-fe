@@ -65,9 +65,9 @@ export default function Navbar(props) {
         <form onSubmit={handleSubmit}>
           <div className="search-box">
             <input type="search" name="search" onChange={(e) => setSearch(e.target.value)} placeholder="Search..." />
-            <NavLink to={`/catalog?search=${search}`}>
+            <a href={`/catalog?search=${search}`}>
               <span className="fa fa-search"></span>
-            </NavLink>
+            </a>
           </div>
         </form>
         <ol>

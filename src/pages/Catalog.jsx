@@ -69,9 +69,9 @@ export default function Catalog() {
                   <h5 className="catalog-nav-title">Categories</h5>
                   <br />
                   <div className="catalog-nav-link">
-                    <NavLink to="/catalog" className="catalog-link d-flex justify-content-between">
+                    <a href="/catalog" className="catalog-link d-flex justify-content-between">
                       All Categories<i className="bx bx-chevron-right"></i>
-                    </NavLink>
+                    </a>
                     <ul>
                       {categories.map((category) => (
                         <a href={`/catalog?category=${category.nama}`} key={category.id} className="my-2 catalog-link d-flex justify-content-between">
@@ -108,9 +108,9 @@ export default function Catalog() {
                 <h5 className="catalog-nav-title">Categories</h5>
                 <br />
                 <div className="catalog-nav-link">
-                  <NavLink to="/catalog" className="catalog-link d-flex justify-content-between">
+                  <a href="/catalog" className="catalog-link d-flex justify-content-between">
                     All Categories<i className="bx bx-chevron-right"></i>
-                  </NavLink>
+                  </a>
                   <ul>
                     {categories.map((category) => (
                       <a href={`/catalog?category=${category.nama}`} key={category.id} className="my-2 catalog-link d-flex justify-content-between">
