@@ -1,0 +1,238 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    /* ini untuk tampilan handphone */
+    .container a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .container a:hover {
+        text-decoration: none;
+        color: black;
+        background: #EEEE;
+        border-radius: 10px;
+    }
+
+    .product {
+        border-radius: 16px;
+        background: transparent;
+        padding: 0;
+        margin: 1rem 0.5rem;
+    }
+    
+    .product-img {
+        margin-right: 2rem;
+    }
+    
+    .product-img img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 12px;
+    }
+
+    .product-details h5 {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .product-details h5.seller-agree {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #FFF;
+        background: green;
+    }
+
+    .product-details h5.seller-reject {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #FFF;
+        background: red;
+    }
+
+    .product-details p {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px){
+    /* ini untuk tampilan tablet */
+    .container a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .product {
+        border-radius: 16px;
+        background: transparent;
+        padding: 0;
+        margin: 1rem 0.5rem;
+    }
+    
+    .product-img {
+        margin-right: 2rem;
+    }
+    
+    .product-img img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 12px;
+    }
+
+    .product-details h5 {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .product-details h5.seller-agree {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #FFF;
+        background: green;
+    }
+
+    .product-details h5.seller-reject {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #FFF;
+        background: red;
+    }
+
+    .product-details p {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px){
+    .container a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .product {
+        border-radius: 16px;
+        background: transparent;
+        padding: 0;
+        margin: 1rem 0.5rem;
+    }
+    
+    .product-img {
+        margin-right: 2rem;
+    }
+    
+    .product-img img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 12px;
+    }
+
+    .product-details h5 {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .product-details h5.seller-agree {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFF;
+        background: green;
+    }
+
+    .product-details h5.seller-reject {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFF;
+        background: red;
+    }
+
+    .product-details p {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  
+  /* Large devices (Laptops/desktop, 992px and up) */
+  @media only screen and (min-width: 992px){
+    /* ini untuk tampilan laptop */
+    
+  }
+  
+  /* Extra Large devices (Large laptops and destops, 120px and up) */
+  @media only screen and (min-width: 1200px){
+    .container a {
+        text-decoration: none;
+        color: black;
+    }
+    .product {
+        border-radius: 16px;
+        background: transparent;
+        padding: 0;
+        margin: 1rem 1rem;
+    }
+    
+    .product-img {
+        margin-right: 2rem;
+    }
+    
+    .product-img img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 12px;
+    }
+
+    .product-details h5 {
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .product-details h5.seller-agree {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #FFF;
+        background: green;
+    }
+
+    .product-details h5.seller-reject {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #FFF;
+        background: red;
+    }
+
+    .product-details p {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  

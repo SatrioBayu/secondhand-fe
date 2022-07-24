@@ -1,0 +1,57 @@
+/* Landing Page */
+.buttonCategories {
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .imgCarousel{
+    object-fit: cover !important;
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px){
+    /* ini untuk tampilan handphone */
+    .imgCarousel {
+      height: 10rem;
+      width: 120rem;
+    } 
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px){
+    /* ini untuk tampilan tablet */
+    .imgCarousel {
+      height: 10rem;
+      width: 120rem;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px){
+    .imgCarousel {
+      height: 20rem;
+      width: 120rem;
+    }
+  }
+  
+  /* Large devices (Laptops/desktop, 992px and up) */
+  @media only screen and (min-width: 992px){
+    /* ini untuk tampilan laptop */
+    .imgCarousel {
+      height: 27rem;
+      width: 120rem;
+    }
+  }
+  
+  /* Extra Large devices (Large laptops and destops, 120px and up) */
+  @media only screen and (min-width: 1200px){
+    .imgCarousel {
+      height: 30rem;
+      width: 120rem;
+    }
+  }

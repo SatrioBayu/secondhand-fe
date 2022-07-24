@@ -1,0 +1,23 @@
+h2.modal-title {
+    padding-left: 1.3rem;
+}
+
+div.modal-body li .a-modal {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+div.modal-body li .a-modal:hover {
+    color: #FF7158;
+}
+
+div.modal-body li {
+    color: transparent;
+    padding: 10px 0;
+}
+
+/* .modal-backdrop{
+    display: none;
+} */

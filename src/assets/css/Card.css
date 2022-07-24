@@ -1,0 +1,137 @@
+  /* Card */
+  .cardImgStyle {
+    width: 18rem;
+    margin: 0rem;
+    margin-bottom: 2rem;
+  }
+  
+  .thumbnail-text {
+    text-align: left;
+  }
+  
+  .price-text {
+    text-align: left;
+    color: #F47458;
+  }
+  
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px){
+    .cardStyle {
+      width: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    .cardStyle img {
+      width: 100%;
+    }
+  
+    .cardImgStyle {
+      width: 7rem;
+      margin: 0rem;
+      margin-bottom: 2rem;
+    }
+  
+    .thumbnail-text {
+      text-align: left;
+      font-size: 80%;
+    }
+    
+    .price-text {
+      text-align: left;
+      color: #F47458;
+    }
+    
+  }
+
+  @media only screen and (width: 540px){
+    .cardStyle {
+      width: 6rem;
+      margin: 0rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px){
+    .cardStyle {
+      width: 8rem;
+      margin: 0rem;
+      margin-bottom: 2rem;
+    }
+
+    .thumbnail-text {
+      text-align: left;
+      font-size: 12px;
+    }
+
+    .price-text {
+      text-align: left;
+      color: #F47458;
+      font-size: 12px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px){
+    .cardStyle {
+      width: 8rem;
+      margin: 0rem;
+      margin-bottom: 2rem;
+    }
+
+    .thumbnail-text {
+      text-align: left;
+      font-size: 12px;
+    }
+
+    .price-text {
+      text-align: left;
+      color: #F47458;
+      font-size: 12px;
+    }
+  }
+  
+  /* Large devices (Laptops/desktop, 992px and up) */
+  @media only screen and (min-width: 992px){
+    .cardStyle {
+      width: 6rem;
+      margin-bottom: 2rem;
+    }
+
+    .cardStyle img {
+      width: 100%;
+    }
+
+  }
+  
+  /* Extra Large devices (Large laptops and destops, 120px and up) */
+  @media only screen and (min-width: 1200px){
+    .cardStyle {
+      width: 7rem;
+      margin-bottom: 2rem;
+    }
+
+    .cardStyle img {
+      width: 100%;
+    }
+  }
+  
+  .card-img{
+    object-fit: cover;
+    height: 12rem !important;
+  }
+
+  @media (max-width: 992px) {
+    .card-img{
+      height: 10rem !important;
+    }
+  }
+  @media (max-width: 768px) {
+    /* .card{
+      width: 30rem !important;
+    } */
+    .card-img{
+      height: 15rem !important;
+    }
+  }  

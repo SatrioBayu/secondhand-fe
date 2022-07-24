@@ -1,0 +1,178 @@
+  /* Wishlist */
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 768px){
+    /* ini untuk tampilan handphone */
+    .catalog-vertical  h2.catalog-title {
+      font-size: 30px;
+      font-weight: 900;
+    }
+  
+    .catalog-vertical h5.catalog-nav-title {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .catalog-vertical{
+      display: block;
+      margin: 0 0.4rem;
+    }
+
+    .catalog-vertical .catalog-nav {
+      padding: 1rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);
+        padding: 20px 20px;
+    }
+
+    .catalog-vertical .catalog-nav-link {
+      font-size: 15px;
+    }
+
+    .row-vertical {
+      padding-left: 5px;
+      padding-right: 0;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 0px){
+    /* ini untuk tampilan tablet */
+    .container {
+      padding: 0 0.7rem;
+    }
+  
+    h2.catalog-title{
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+    h3.catalog-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    
+    .catalog-nav-link a.catalog-link{
+      text-decoration: none;
+      color: black;
+    }
+    
+    .catalog-nav-link a.catalog-link:hover,
+    .catalog-nav-link:hover{
+      color: #FF7158;
+      transition: 0.2s;
+    }
+    
+    .catalog-nav{
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);
+      padding: 20px 20px;
+    }
+    .catalog-horizontal{
+      display: none !important
+    }
+
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (max-width: 768px){
+    .container {
+      padding: 0 0.7rem;
+    }
+  
+    h2.catalog-title{
+      font-size: 50px;
+      font-weight: 900;
+    }
+    
+    .catalog-nav-link a.catalog-link{
+      text-decoration: none;
+      color: black;
+    }
+    
+    .catalog-nav-link a.catalog-link:hover,
+    .catalog-nav-link:hover{
+      color: #FF7158;
+      transition: 0.2s;
+    }
+    
+    .catalog-nav{
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);
+      padding: 20px 20px;
+    }
+  }
+  
+  /* Large devices (Laptops/desktop, 992px and up) */
+  @media only screen and (min-width: 768px){
+    /* ini untuk tampilan laptop */
+    .container {
+      padding: 0 0.7rem;
+    }
+  
+    h2.catalog-title{
+      font-size: 50px;
+      font-weight: 900;
+    }
+    
+    .catalog-nav-link a.catalog-link{
+      text-decoration: none;
+      color: black;
+    }
+    
+    .catalog-nav-link a.catalog-link:hover,
+    .catalog-nav-link:hover{
+      color: #FF7158;
+      transition: 0.2s;
+    }
+    
+    .catalog-nav{
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);
+      padding: 20px 20px;
+    }
+  
+    .catalog-vertical{
+      display: none !important;
+    }
+    .catalog-horizontal{
+      display: flex !important;
+    }
+  }
+  
+  /* Extra Large devices (Large laptops and destops, 120px and up) */
+  @media only screen and (min-width: 1200px){
+    .container {
+      padding: 0 0.7rem;
+    }
+  
+    h2.catalog-title{
+      font-size: 50px;
+      font-weight: 900;
+    }
+    
+    .catalog-nav-link a.catalog-link{
+      text-decoration: none;
+      color: black;
+    }
+    
+    .catalog-nav-link a.catalog-link:hover,
+    .catalog-nav-link:hover{
+      color: #FF7158;
+      transition: 0.2s;
+    }
+    
+    .catalog-nav{
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);
+      padding: 20px 20px;
+    }
+  
+    .catalog-vertical{
+      display: none !important;
+    }
+  }

@@ -1,0 +1,72 @@
+.page-transaksi-buyer {
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 50px 20px 50px 40px;
+}
+.judul-buy {
+    width: max-content;
+    margin: -35px 0 30px 0;
+}
+.judul {
+    line-height: 27px;
+    color: #000;
+    margin-bottom: -10px;
+}
+.line {
+    border: 1px solid #000;
+}
+.table-transaksi {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    margin: auto 0;
+    text-decoration: none;
+    color: #000;
+}
+.image-product {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: auto;
+}
+.text-product {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300px;
+    line-height: 27px; 
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #0C0D36;
+    margin: auto;
+}
+.image-expand {
+    width: 20px;
+    height: 20px;
+}
+.sidebar-mobile {
+    display: none;
+}
+.list-mobile {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .sidebar-dekstop {
+        display: none;
+    }
+    .navbar-dekstop {
+        display: none;
+    }
+    .sidebar-mobile {
+        display: block;
+    }
+    .judul-buy {
+        width: max-content;
+        margin: 30px 0 30px 0;
+    }
+    .list-dekstop {
+        display: none;
+    }
+    .list-mobile {
+        display: block;
+    }
+}
