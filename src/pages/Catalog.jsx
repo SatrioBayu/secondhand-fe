@@ -131,7 +131,7 @@ export default function Catalog() {
                   ))}
                 </div>
               ) : (
-                <h3 className="catalog-title text-center">No Product Found</h3>
+                <h3 className="catalog-title mt-5 text-center">No Product Found</h3>
               )}
             </div>
           </div>
