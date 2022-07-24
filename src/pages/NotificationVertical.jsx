@@ -50,12 +50,12 @@ export default function Notification() {
         <LayoutNavbarFooter>
           <div className="container container-fluid">
             <div className="row">
+              <p className="fw-bold">Notifikasi Buyer</p>
               {notifBuyer ? (
                 notifBuyer.map((data) => (
                   <div key={data.id} className="col-12">
-                    <p className="fw-bold">Notifikasi Buyer</p>
                     <NavLink to="/dashboardbuyer">
-                      <div className="d-flex product">
+                      <div className="d-flex product align-items-center">
                         <div className="product-img">
                           <img src={data.Product.ProductImages[0].image} alt="image" />
                         </div>
@@ -74,12 +74,12 @@ export default function Notification() {
               ) : (
                 <h3 className="text-center">There's no notification on your bid yet</h3>
               )}
+              <p className="fw-bold">Notifikasi Seller</p>
               {notifSeller ? (
                 notifSeller.map((data) => (
                   <div key={data.id} className="col-12">
-                    <p className="fw-bold">Notifikasi Seller</p>
                     <NavLink to="/dashboardseller">
-                      <div className="d-flex product">
+                      <div className="d-flex product align-items-center">
                         <div className="product-img">
                           <img src={data.Product.ProductImages[0].image} alt="image" />
                         </div>
