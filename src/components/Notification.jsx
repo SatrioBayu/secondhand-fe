@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export default function Notification(props) {
   return (
     <li>
-      <p className="text-center fw-bold fs-6">Notification Buyer</p>
+      {props.buyer ? <p className="text-center fw-bold fs-6">Notification Buyer</p> : <p></p>}
       {props.buyer &&
         props.buyer.map((data) => (
           <div key={data.id}>
@@ -26,7 +26,7 @@ export default function Notification(props) {
             </NavLink>
           </div>
         ))}
-      <p className="text-center fw-bold fs-6">Notification Seller</p>
+      {props.seller ? <p className="text-center fw-bold fs-6">Notification Seller</p> : <p></p>}
       {props.seller &&
         props.seller.map((data) => (
           <div key={data.id}>

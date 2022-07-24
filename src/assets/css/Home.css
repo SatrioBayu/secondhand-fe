@@ -10,7 +10,7 @@
     cursor: pointer;
   }
   .imgCarousel{
-    object-fit: cover !important;
+    object-fit: contain !important;
   }
   
   /* Extra small devices (phones, 600px and down) */

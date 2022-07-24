@@ -40,7 +40,7 @@ export default function MyProduct() {
       if (user.data.data.alamat && user.data.data.noHp && user.data.data.kota && user.data.data.image) {
         setCompleteAccount(true);
       }
-      if (product.data.data.length >= 4) {
+      if (product.data.data && product.data.data.length >= 4) {
         setExcededLimit(true);
       }
       setUser(user.data.data);

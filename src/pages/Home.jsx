@@ -52,27 +52,32 @@ export default function Home() {
         <LayoutNavbarFooter>
           <div className="container">
             {/* Carousel */}
-            <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleInterval" className="carousel slide carousel-dark" data-bs-ride="carousel">
               <div className="carousel-inner">
-                {products.map((product) => (
-                  <div key={product.id}>
-                    {product.id == 1 ? (
-                      <div className="carousel-item active" data-bs-interval="2000">
-                        <img src={Jordan} className="w-100 imgCarousel" alt="img" />
-                      </div>
-                    ) : (
-                      <div className="carousel-item" key={product.id}>
-                        <img src={product.ProductImages[0].image} className="w-100 imgCarousel" alt="img" />
-                      </div>
-                    )}
+                {products ? (
+                  products.map((product) => (
+                    <div key={product.id}>
+                      {product.id == 1 ? (
+                        <div className="carousel-item active" data-bs-interval="2000">
+                          <img src={Jordan} className="w-100 imgCarousel" alt="img" />
+                        </div>
+                      ) : (
+                        <div className="carousel-item" key={product.id}>
+                          <img src={product.ProductImages[0].image} className="w-100 imgCarousel" alt="img" />
+                        </div>
+                      )}
+                    </div>
+                  ))
+                ) : (
+                  <div>
+                    <div className="carousel-item active" data-bs-interval="2000">
+                      <img src={Banner} className="d-block w-100 imgCarousel" alt="img" />
+                    </div>
+                    <div className="carousel-item">
+                      <img src={Banner} className="d-block w-100 imgCarousel" alt="img" />
+                    </div>
                   </div>
-                ))}
-                {/* <div className="carousel-item" data-bs-interval="2000">
-                  <img src={Banner} className="d-block w-100 imgCarousel" alt="img" />
-                </div>
-                <div className="carousel-item">
-                  <img src={Banner} className="d-block w-100 imgCarousel" alt="img" />
-                </div> */}
+                )}
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -151,13 +156,17 @@ export default function Home() {
             <div className="home-title mt-5 mb-4">
               <h4>New Products</h4>
             </div>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 mt-2">
-              {products.map((product) => (
-                <NavLink key={product.id} to={`/productDetails/${product.id}`}>
-                  <Card data={product} />
-                </NavLink>
-              ))}
-            </div>
+            {products ? (
+              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 mt-2">
+                {products.map((product) => (
+                  <NavLink key={product.id} to={`/productDetails/${product.id}`}>
+                    <Card data={product} />
+                  </NavLink>
+                ))}
+              </div>
+            ) : (
+              <h3 className="text-center catalog-title">No Products</h3>
+            )}
           </div>
         </LayoutNavbarFooter>
       )}

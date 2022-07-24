@@ -241,7 +241,8 @@
     inset: 0px 0px auto auto !important;
     position: absolute !important;
     transform: translate3d(-295.5px, 71.5px, 0px) !important;
-    height: 30rem;
+    max-height: 30rem;
+    min-height: 0px;
     overflow-y: scroll;
 }
   

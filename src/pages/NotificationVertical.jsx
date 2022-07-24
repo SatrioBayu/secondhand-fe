@@ -72,7 +72,7 @@ export default function Notification() {
                   </div>
                 ))
               ) : (
-                <h3 className="text-center">There's no notification on your bid yet</h3>
+                <h6 className="text-center">There's no notification on your bid yet</h6>
               )}
               <p className="fw-bold">Notifikasi Seller</p>
               {notifSeller ? (
@@ -95,7 +95,7 @@ export default function Notification() {
                   </div>
                 ))
               ) : (
-                <h3 className="text-center">There's no notification for your product yet</h3>
+                <h6 className="text-center">There's no notification for your product yet</h6>
               )}
             </div>
           </div>
