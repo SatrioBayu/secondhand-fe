@@ -16,7 +16,7 @@ export default function Footer() {
               transactions directly outside the platform.
             </p>
           </div>
-          <div className="col-md-2">
+          <div className="col-sm-4 col-md-2">
             <h5 className="text-uppercase">Links</h5>
             <ul className="list-unstyled">
               <li>
@@ -36,10 +36,10 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-md-8">
+          <div className="col-sm-8 col-lg-4">
             <h5 className="text-uppercase">Categories</h5>
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-sm-6">
                 <ul className="list-unstyled">
                   <li>
                     <NavLink className="footer-link" to="/catalog?category=Electronic">
@@ -68,7 +68,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-6">
+              <div className="col-sm-6">
                 <ul className="list-unstyled">
                   <li>
                     <NavLink className="footer-link" to="/catalog?category=Health%20and%20Beauty">
