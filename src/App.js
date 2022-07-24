@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Login, Catalog, Details, ShoppingCart, Wishlist, Register, NotificationVertical, Account, DashboardBuyer, DashboardSeller, MyProduct } from "./pages";
+import { Home, Login, Catalog, Details, ShoppingCart, Wishlist, Register, NotificationVertical, Account, DashboardBuyer, DashboardSeller, MyProduct, Error } from "./pages";
 import Protected from "./components/Protected";
 
 function App() {
@@ -62,6 +62,7 @@ function App() {
               </Protected>
             }
           />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
       {/* )} */}

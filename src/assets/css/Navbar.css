@@ -447,7 +447,7 @@ input[type="checkbox"] {
 
   #check:checked~nav ol {
     visibility: visible;
-    height: 280px;
+    height: 300px;
   }
 
   #check:checked~nav ol li:nth-child(1),

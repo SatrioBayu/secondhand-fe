@@ -1,0 +1,22 @@
+div.page-height {
+    height: 100vh;
+}
+
+h1.error-msg {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+img.error-img {
+    width: 40%;
+}
+
+div.error-msg a {
+    color: #FF7158;
+    cursor: pointer;
+}
+
+.go-back{
+    color: #FF7158;
+    cursor: pointer;
+}
