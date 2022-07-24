@@ -170,13 +170,13 @@ export default function Account() {
                   </label>
                   <input type="text" required onChange={(e) => setAlamat(e.target.value)} value={alamat} className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
                 </div>
-                <div className="col-6 mt-4">
+                <div className="col-md-6 mt-4">
                   <label htmlFor="inputMobile" className="form-label">
                     Mobile Phone
                   </label>
                   <input type="text" required onChange={(e) => setNoHp(e.target.value)} value={noHp} className="form-control" id="inputMobile" />
                 </div>
-                <div className="col-6 mt-4">
+                <div className="col-md-6 mt-4">
                   <label htmlFor="inputMobile" className="form-label">
                     Password
                   </label>

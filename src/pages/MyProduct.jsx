@@ -71,7 +71,7 @@ export default function MyProduct() {
             <div className="page-transaksi-buyer">
               <div className="row mb-5 navbar-dekstop">
                 <div className="col-md-6">
-                  <h3 className="catalog-title">My Product</h3>
+                  <h3>My Product</h3>
                   <p>Manage it well and get money</p>
                   {completeAccount ? (
                     <div>
