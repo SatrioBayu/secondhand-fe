@@ -46,7 +46,7 @@ export default function AddProduct() {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
-      location.reload();
+      window.location.reload();
     } catch (error) {
       console.log(error);
       setError(error.response.data);

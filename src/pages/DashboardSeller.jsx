@@ -60,7 +60,7 @@ export default function DashboardSeller() {
     } catch (error) {
       console.log(error);
     }
-    location.reload();
+    window.location.reload();
   };
 
   const handleReject = async (e) => {
@@ -82,7 +82,7 @@ export default function DashboardSeller() {
     } catch (error) {
       console.log(error);
     }
-    location.reload();
+    window.location.reload();
   };
 
   useEffect(() => {

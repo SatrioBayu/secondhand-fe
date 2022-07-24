@@ -73,7 +73,7 @@ export default function LayoutNavbarFooter({ children }) {
   const handlelogout = () => {
     localStorage.removeItem("token");
     setIsLoggedIn(false);
-    location.reload();
+    window.location.reload();
   };
 
   return (

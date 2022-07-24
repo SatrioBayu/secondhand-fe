@@ -58,7 +58,7 @@ export default function Account() {
       setPassword("");
       setUploading(false);
       setTimeout(() => {
-        location.reload();
+        window.location.reload();
       }, 1000);
     } catch (error) {
       setError(error.response.data.errors[0].message);
