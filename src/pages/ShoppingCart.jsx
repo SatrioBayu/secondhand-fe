@@ -23,8 +23,10 @@ export default function ShoppingCart() {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
-      const filter = products.data.data.filter((product) => product.status === "Menunggu Konfirmasi");
-      setProducts(filter);
+      if (products.data.data) {
+        const filter = products.data.data.filter((product) => product.status === "Menunggu Konfirmasi");
+        setProducts(filter);
+      }
       setLoading(false);
     } catch (error) {
       console.log(error);
