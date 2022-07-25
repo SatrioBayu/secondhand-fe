@@ -155,7 +155,10 @@ export default function DashboardSeller() {
                                   // <a target="_blank" href={`https://wa.me/${item.User.noHp}`}>
                                   <a
                                     target="_blank"
-                                    href={`https://api.whatsapp.com/send?phone=${item.User.noHp}&text=Hai%20${item.User.nama},%0ASaya%20Penjual%20dari%20barang%20${item.Product.nama}`}
+                                    href={`https://api.whatsapp.com/send?phone=+62${item.User.noHp.substring(1, item.User.noHp.length)}&text=Hai%20${item.User.nama},%0ASaya%20${
+                                      item.User.nama
+                                    }%20penjual%20dari%20barang%20${item.Product.nama}
+                                    .%0ASaya%20menyetujui%20tawaran%20anda%20dengan%20harga%20${item.harga}.`}
                                   >
                                     <button className="btn btn-success">
                                       <span className="fa fa-whatsapp"></span>
@@ -212,7 +215,14 @@ export default function DashboardSeller() {
                             {item.status !== "Menunggu Konfirmasi" ? (
                               <div>
                                 {item.status === "Diterima" ? (
-                                  <a className="d-flex inline-block" target="_blank" href={`https://api.whatsapp.com/send?phone=${item.User.noHp}&text=Hai%20Pembeli%0ASaya%20Penjual`}>
+                                  <a
+                                    className="d-flex inline-block"
+                                    target="_blank"
+                                    href={`https://api.whatsapp.com/send?phone=+62${item.User.noHp.substring(1, item.User.noHp.length)}&text=Hai%20${item.User.nama},%0ASaya%20${
+                                      item.User.nama
+                                    }%20penjual%20dari%20barang%20${item.Product.nama}
+                                    .%0ASaya%20menyetujui%20tawaran%20anda%20dengan%20harga%20${item.harga}.`}
+                                  >
                                     <button className="flex-fill btn btn-success">
                                       <span className="fa fa-whatsapp">&nbsp;Contact Buyer</span>
                                     </button>
