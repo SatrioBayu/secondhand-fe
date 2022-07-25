@@ -55,26 +55,24 @@ export default function Home() {
             <div id="carouselExampleInterval" className="carousel slide carousel-dark" data-bs-ride="carousel">
               <div className="carousel-inner">
                 {products ? (
-                  products.map((product) => (
-                    <div key={product.id}>
-                      {product.id == 1 ? (
-                        <div className="carousel-item active" data-bs-interval="2000">
-                          <img src={Jordan} className="w-100 imgCarousel" alt="img" />
-                        </div>
-                      ) : (
-                        <div className="carousel-item" key={product.id}>
-                          <img src={product.ProductImages[0].image} className="w-100 imgCarousel" alt="img" />
-                        </div>
-                      )}
+                  <div>
+                    <div className="carousel-item active" data-bs-interval="2000">
+                      <img src={products[3].ProductImages[0].image} className="w-100 imgCarousel" alt="img" />
                     </div>
-                  ))
+                    <div className="carousel-item">
+                      <img src={products[1].ProductImages[0].image} className="w-100 imgCarousel" alt="img" />
+                    </div>
+                    <div className="carousel-item">
+                      <img src={products[4].ProductImages[0].image} className="w-100 imgCarousel" alt="img" />
+                    </div>
+                  </div>
                 ) : (
                   <div>
                     <div className="carousel-item active" data-bs-interval="2000">
                       <img src={Banner} className="d-block w-100 imgCarousel" alt="img" />
                     </div>
                     <div className="carousel-item">
-                      <img src={Banner} className="d-block w-100 imgCarousel" alt="img" />
+                      <img src={Jordan} className="d-block w-100 imgCarousel" alt="img" />
                     </div>
                   </div>
                 )}

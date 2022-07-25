@@ -22,17 +22,19 @@ export default function Wishlist() {
   const fetchData = async () => {
     // try {
     const productArray = [];
-    for (let i = 0; i < wishlist.length; i++) {
-      try {
-        const product = await axios.get(`https://secondhand-backend-mac.herokuapp.com/product/${wishlist[i].id}`);
-        productArray.push(product.data.data);
-      } catch (error) {
-        const newWishlist = wishlist.filter((item) => item.id !== wishlist[i].id);
-        localStorage.setItem("wishlist", JSON.stringify(newWishlist));
-        continue;
+    if (wishlist) {
+      for (let i = 0; i < wishlist.length; i++) {
+        try {
+          const product = await axios.get(`https://secondhand-backend-mac.herokuapp.com/product/${wishlist[i].id}`);
+          productArray.push(product.data.data);
+        } catch (error) {
+          const newWishlist = wishlist.filter((item) => item.id !== wishlist[i].id);
+          localStorage.setItem("wishlist", JSON.stringify(newWishlist));
+          continue;
+        }
       }
+      setProducts(productArray);
     }
-    setProducts(productArray);
     setLoading(false);
   };
 
