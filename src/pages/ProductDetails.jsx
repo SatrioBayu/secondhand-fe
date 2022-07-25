@@ -21,6 +21,7 @@ export default function ProductDetails() {
   const [product, setProduct] = useState({});
   const [ownedProduct, setOwnedProduct] = useState(false);
   const [index, setIndex] = useState(0);
+  const [completeAccount, setCompleteAccount] = useState(false);
   const { id } = useParams();
 
   const fetchData = async () => {
@@ -32,6 +33,9 @@ export default function ProductDetails() {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
         });
+        if (user.data.data.alamat && user.data.data.noHp && user.data.data.kota && user.data.data.image) {
+          setCompleteAccount(true);
+        }
         if (res.data.data.userId == user.data.data.id) {
           setOwnedProduct(true);
         }
@@ -116,9 +120,17 @@ export default function ProductDetails() {
                       Bid
                     </button>
                   ) : (
-                    <button type="button" className="bid btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                      Bid
-                    </button>
+                    <div>
+                      {completeAccount ? (
+                        <button type="button" className="bid btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Bid
+                        </button>
+                      ) : (
+                        <button type="button" disabled className="bid btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Bid
+                        </button>
+                      )}
+                    </div>
                   )}
                 </div>
                 <div className="mt-4 text-end">
