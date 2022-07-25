@@ -111,7 +111,7 @@ export default function DashboardBuyer() {
                                 <a
                                   target="_blank"
                                   href={`https://api.whatsapp.com/send?phone=+62${item.Product.User.noHp.substring(1, item.Product.User.noHp.length)}&text=Hai%20${item.Product.User.nama}.%0ASaya%20${
-                                    item.user.nama
+                                    user.nama
                                   }%20ingin%20membeli%20barangmu%20${item.Product.nama}%20dengan%20harga%20${item.harga}`}
                                 >
                                   <button className="btn btn-success">
@@ -155,7 +155,7 @@ export default function DashboardBuyer() {
                                 className="d-flex inline-block"
                                 target="_blank"
                                 href={`https://api.whatsapp.com/send?phone=+62${item.Product.User.noHp.substring(1, item.Product.User.noHp.length)}&text=Hai%20${item.Product.User.nama}.%0ASaya%20${
-                                  item.user.nama
+                                  user.nama
                                 }%20ingin%20membeli%20barangmu%20${item.Product.nama}%20dengan%20harga%20${item.harga}`}
                               >
                                 <button className="flex-fill btn btn-success">
